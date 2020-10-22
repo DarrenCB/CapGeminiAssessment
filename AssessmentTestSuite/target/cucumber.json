@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-10-22T14:29:45.881Z",
+        "start_timestamp": "2020-10-22T14:59:15.275Z",
         "line": 3,
         "name": "User edits his submitted salary",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9391507500,
+              "duration": 9267183700,
               "status": "passed"
             },
             "line": 4,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 1768763500,
+              "duration": 1853744000,
               "status": "passed"
             },
             "line": 5,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 46000900,
+              "duration": 45011000,
               "status": "passed"
             },
             "line": 6,
@@ -62,7 +62,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-10-22T14:29:57.160Z",
+        "start_timestamp": "2020-10-22T14:59:26.500Z",
         "line": 8,
         "name": "User checks monthly take-home pay",
         "description": "",
@@ -72,7 +72,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2672593600,
+              "duration": 2639573600,
               "status": "passed"
             },
             "line": 9,
@@ -90,7 +90,7 @@
           },
           {
             "result": {
-              "duration": 103734200,
+              "duration": 199525300,
               "status": "passed"
             },
             "line": 10,
@@ -108,7 +108,7 @@
           },
           {
             "result": {
-              "duration": 56010200,
+              "duration": 70993700,
               "status": "passed"
             },
             "line": 11,
@@ -127,7 +127,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-10-22T14:29:59.997Z",
+        "start_timestamp": "2020-10-22T14:59:29.414Z",
         "line": 13,
         "name": "User decides to start again",
         "description": "",
@@ -137,7 +137,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2617386400,
+              "duration": 2748939600,
               "status": "passed"
             },
             "line": 14,
@@ -155,7 +155,7 @@
           },
           {
             "result": {
-              "duration": 320879500,
+              "duration": 319311400,
               "status": "passed"
             },
             "line": 15,
@@ -173,7 +173,7 @@
           },
           {
             "result": {
-              "duration": 15003700,
+              "duration": 15001900,
               "status": "passed"
             },
             "line": 16,
@@ -197,7 +197,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-10-22T14:30:02.956Z",
+        "start_timestamp": "2020-10-22T14:59:32.502Z",
         "line": 3,
         "name": "User submits hourly salary to tax calculator",
         "description": "",
@@ -207,7 +207,7 @@
         "steps": [
           {
             "result": {
-              "duration": 165531900,
+              "duration": 150060900,
               "status": "passed"
             },
             "line": 4,
@@ -225,7 +225,7 @@
           },
           {
             "result": {
-              "duration": 2367773600,
+              "duration": 2326878800,
               "status": "passed"
             },
             "line": 5,
@@ -243,7 +243,7 @@
           },
           {
             "result": {
-              "duration": 39532500,
+              "duration": 35872700,
               "status": "passed"
             },
             "line": 6,
@@ -262,7 +262,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-10-22T14:30:05.534Z",
+        "start_timestamp": "2020-10-22T14:59:35.021Z",
         "line": 8,
         "name": "User submits daily salary to tax calculator",
         "description": "",
@@ -272,7 +272,7 @@
         "steps": [
           {
             "result": {
-              "duration": 184898700,
+              "duration": 181450200,
               "status": "passed"
             },
             "line": 9,
@@ -290,7 +290,7 @@
           },
           {
             "result": {
-              "duration": 2397318700,
+              "duration": 2391664700,
               "status": "passed"
             },
             "line": 10,
@@ -308,7 +308,7 @@
           },
           {
             "result": {
-              "duration": 33998500,
+              "duration": 35996300,
               "status": "passed"
             },
             "line": 11,
@@ -327,7 +327,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-10-22T14:30:08.154Z",
+        "start_timestamp": "2020-10-22T14:59:37.634Z",
         "line": 13,
         "name": "User submits £0 as salary",
         "description": "",
@@ -337,7 +337,7 @@
         "steps": [
           {
             "result": {
-              "duration": 265266200,
+              "duration": 189846900,
               "status": "passed"
             },
             "line": 14,
@@ -355,7 +355,7 @@
           },
           {
             "result": {
-              "duration": 364983200,
+              "duration": 423569600,
               "status": "passed"
             },
             "line": 15,
@@ -367,7 +367,7 @@
           },
           {
             "result": {
-              "duration": 32120500,
+              "duration": 33805800,
               "status": "passed"
             },
             "line": 16,
@@ -386,7 +386,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-10-22T14:30:08.820Z",
+        "start_timestamp": "2020-10-22T14:59:38.285Z",
         "line": 18,
         "name": "User claims to work 8 days a week",
         "description": "",
@@ -396,7 +396,7 @@
         "steps": [
           {
             "result": {
-              "duration": 267014000,
+              "duration": 187739500,
               "status": "passed"
             },
             "line": 19,
@@ -414,7 +414,7 @@
           },
           {
             "result": {
-              "duration": 932028100,
+              "duration": 984468500,
               "status": "passed"
             },
             "line": 20,
@@ -426,7 +426,7 @@
           },
           {
             "result": {
-              "duration": 27682900,
+              "duration": 28045700,
               "status": "passed"
             },
             "line": 21,

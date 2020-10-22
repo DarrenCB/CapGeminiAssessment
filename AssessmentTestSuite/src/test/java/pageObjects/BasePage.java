@@ -39,14 +39,6 @@ abstract class BasePage {
         element.sendKeys(inputString);
     }
 
-    void waitUntilVisible(By selector){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(selector));
-    }
-
-    void waitUntilInvisible(By selector){
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(selector));
-    }
-
     public PersonalDetails getPersonalDetails() {
         return pd;
     }
@@ -55,7 +47,4 @@ abstract class BasePage {
         driver.manage().deleteAllCookies();
     }
 
-    public void refreshPage(){
-        driver.navigate().refresh();
-    }
 }
