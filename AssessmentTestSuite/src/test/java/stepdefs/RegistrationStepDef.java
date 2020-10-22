@@ -15,10 +15,10 @@ public class RegistrationStepDef {
 
     private HomePage homepage = new HomePage();
 
-    @Given("^the user is on the \"([^\"]*)\" page$")
-    public void theUserOnThePage(String page) {
-        homepage.clearCookies();
-        homepage.goTo();
+//    @Given("^the user is on the \"([^\"]*)\" page$")
+//    public void theUserOnThePage(String page) {
+//        homepage.clearCookies();
+//        homepage.goTo();
 //        switch (page) {
 //            case "sign in":
 //                homepage.navigateToSignInPage();
@@ -42,7 +42,7 @@ public class RegistrationStepDef {
 //                throw new IllegalArgumentException("Unrecognised page provided");
 //        }
 
-    }
+//    }
 
     @When("^the user completes the registration form with \"([^\"]*)\"$")
     public void registrationForm(String combo) {

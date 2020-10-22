@@ -17,10 +17,22 @@ public class UserJourneyStepDef {
     private DetailsPage detailspage = new DetailsPage();
     private ResultsPage resultspage = new ResultsPage();
 
-    @Given("^the user is on the tax calculator page$")
-    public void userOnThePage() {
+    @Given("^the user is on the \"([^\"]*)\" page$")
+    public void userOnThePage(String page) {
         homepage.clearCookies();
         homepage.goTo();
+        switch (page) {
+            case "tax calculator":
+                break;
+            case "tax estimate":
+                homepage.typeSalary();
+                homepage.selectHourly();
+                detailspage.typeHours();
+                detailspage.selectNoStatePension();
+                detailspage.ignoreTaxCode();
+                detailspage.selectNoScottishTaxRate();
+                detailspage.submitData();
+        }
     }
 
     @When("^the user fills in their \"([^\"]*)\" salary and all details$")
@@ -42,7 +54,7 @@ public class UserJourneyStepDef {
         detailspage.submitData();
     }
 
-    @Then("^the user gets shown their take-home pay from their \"([^\"]*)\" salary$")
+    @Then("^the user gets shown their take-home pay \"([^\"]*)\"$")
     public void takeHomePayDisplayed(String salary) {
         resultspage.verifyPayDisplayed(salary);
     }
@@ -52,9 +64,16 @@ public class UserJourneyStepDef {
         homepage.typeEmptySalary();
     }
 
-    @Then("^an error message appears$")
-    public void noSalaryErrorMessage() {
-        homepage.noSalaryErrorMessageVisible();
+    @Then("^\"([^\"]*)\" error message appears$")
+    public void errorMessage(String message) {
+        switch (message) {
+            case "no salary":
+                homepage.noSalaryErrorMessageVisible();
+                break;
+            case "incorrect days":
+                detailspage.tooManyDaysErrorMessageVisible();
+                break;
+        }
     }
 
     @When("^the user fills in their daily salary and types 8 days a week$")
@@ -64,9 +83,9 @@ public class UserJourneyStepDef {
         detailspage.typeEightDays();
     }
 
-    @Then("^a different error message appears$")
-    public void wrongDaysErrorMessage() {
-        detailspage.tooManyDaysErrorMessageVisible();
-    }
+//    @Then("^a different error message appears$")
+//    public void wrongDaysErrorMessage() {
+//        detailspage.tooManyDaysErrorMessageVisible();
+//    }
 
 }

@@ -10,11 +10,11 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the user is on the tax estimate page",
+  "name": "the user is on the \"tax estimate\" page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefs.TaxResultsStepDef.userOnResultsPage()"
+  "location": "stepdefs.UserJourneyStepDef.userOnThePage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -30,7 +30,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user gets shown their take-home pay from their \"daily\" salary",
+  "name": "the user gets shown their take-home pay \"from their daily salary\"",
   "keyword": "Then "
 });
 formatter.match({
@@ -45,31 +45,31 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the user is on the tax estimate page",
+  "name": "the user is on the \"tax estimate\" page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefs.TaxResultsStepDef.userOnResultsPage()"
+  "location": "stepdefs.UserJourneyStepDef.userOnThePage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user selects monthly pay tab",
+  "name": "the user clicks \"monthly pay tab\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepdefs.TaxResultsStepDef.clickMonthlyTab()"
+  "location": "stepdefs.TaxResultsStepDef.clickButton(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user gets shown their monthly take-home pay",
+  "name": "the user gets shown their take-home pay \"on a monthly basis\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefs.TaxResultsStepDef.verifyMonthResults()"
+  "location": "stepdefs.UserJourneyStepDef.takeHomePayDisplayed(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -80,21 +80,21 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the user is on the tax estimate page",
+  "name": "the user is on the \"tax estimate\" page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefs.TaxResultsStepDef.userOnResultsPage()"
+  "location": "stepdefs.UserJourneyStepDef.userOnThePage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks to start again",
+  "name": "the user clicks \"start again\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepdefs.TaxResultsStepDef.clickStartAgain()"
+  "location": "stepdefs.TaxResultsStepDef.clickButton(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -121,11 +121,11 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the user is on the tax calculator page",
+  "name": "the user is on the \"tax calculator\" page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefs.UserJourneyStepDef.userOnThePage()"
+  "location": "stepdefs.UserJourneyStepDef.userOnThePage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -141,7 +141,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user gets shown their take-home pay from their \"hourly\" salary",
+  "name": "the user gets shown their take-home pay \"from their hourly salary\"",
   "keyword": "Then "
 });
 formatter.match({
@@ -156,11 +156,11 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the user is on the tax calculator page",
+  "name": "the user is on the \"tax calculator\" page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefs.UserJourneyStepDef.userOnThePage()"
+  "location": "stepdefs.UserJourneyStepDef.userOnThePage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -176,7 +176,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user gets shown their take-home pay from their \"daily\" salary",
+  "name": "the user gets shown their take-home pay \"from their daily salary\"",
   "keyword": "Then "
 });
 formatter.match({
@@ -191,11 +191,11 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the user is on the tax calculator page",
+  "name": "the user is on the \"tax calculator\" page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefs.UserJourneyStepDef.userOnThePage()"
+  "location": "stepdefs.UserJourneyStepDef.userOnThePage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -211,11 +211,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "an error message appears",
+  "name": "\"no salary\" error message appears",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefs.UserJourneyStepDef.noSalaryErrorMessage()"
+  "location": "stepdefs.UserJourneyStepDef.errorMessage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -226,11 +226,11 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the user is on the tax calculator page",
+  "name": "the user is on the \"tax calculator\" page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefs.UserJourneyStepDef.userOnThePage()"
+  "location": "stepdefs.UserJourneyStepDef.userOnThePage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -246,11 +246,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "a different error message appears",
+  "name": "\"incorrect days\" error message appears",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefs.UserJourneyStepDef.wrongDaysErrorMessage()"
+  "location": "stepdefs.UserJourneyStepDef.errorMessage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

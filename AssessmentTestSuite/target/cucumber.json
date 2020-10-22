@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-10-22T13:51:28.478Z",
+        "start_timestamp": "2020-10-22T14:16:04.966Z",
         "line": 3,
         "name": "User edits his submitted salary",
         "description": "",
@@ -13,19 +13,25 @@
         "steps": [
           {
             "result": {
-              "duration": 9346755400,
+              "duration": 8915033500,
               "status": "passed"
             },
             "line": 4,
-            "name": "the user is on the tax estimate page",
+            "name": "the user is on the \"tax estimate\" page",
             "match": {
-              "location": "stepdefs.TaxResultsStepDef.userOnResultsPage()"
+              "arguments": [
+                {
+                  "val": "tax estimate",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.UserJourneyStepDef.userOnThePage(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1719951300,
+              "duration": 1731406200,
               "status": "passed"
             },
             "line": 5,
@@ -37,16 +43,16 @@
           },
           {
             "result": {
-              "duration": 42007700,
+              "duration": 33538000,
               "status": "passed"
             },
             "line": 6,
-            "name": "the user gets shown their take-home pay from their \"daily\" salary",
+            "name": "the user gets shown their take-home pay \"from their daily salary\"",
             "match": {
               "arguments": [
                 {
-                  "val": "daily",
-                  "offset": 52
+                  "val": "from their daily salary",
+                  "offset": 41
                 }
               ],
               "location": "stepdefs.UserJourneyStepDef.takeHomePayDisplayed(java.lang.String)"
@@ -56,7 +62,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-10-22T13:51:39.649Z",
+        "start_timestamp": "2020-10-22T14:16:15.702Z",
         "line": 8,
         "name": "User checks monthly take-home pay",
         "description": "",
@@ -66,44 +72,62 @@
         "steps": [
           {
             "result": {
-              "duration": 2651987600,
+              "duration": 2477496300,
               "status": "passed"
             },
             "line": 9,
-            "name": "the user is on the tax estimate page",
+            "name": "the user is on the \"tax estimate\" page",
             "match": {
-              "location": "stepdefs.TaxResultsStepDef.userOnResultsPage()"
+              "arguments": [
+                {
+                  "val": "tax estimate",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.UserJourneyStepDef.userOnThePage(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 87140800,
+              "duration": 110021200,
               "status": "passed"
             },
             "line": 10,
-            "name": "the user selects monthly pay tab",
+            "name": "the user clicks \"monthly pay tab\"",
             "match": {
-              "location": "stepdefs.TaxResultsStepDef.clickMonthlyTab()"
+              "arguments": [
+                {
+                  "val": "monthly pay tab",
+                  "offset": 17
+                }
+              ],
+              "location": "stepdefs.TaxResultsStepDef.clickButton(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 42414800,
+              "duration": 53029000,
               "status": "passed"
             },
             "line": 11,
-            "name": "the user gets shown their monthly take-home pay",
+            "name": "the user gets shown their take-home pay \"on a monthly basis\"",
             "match": {
-              "location": "stepdefs.TaxResultsStepDef.verifyMonthResults()"
+              "arguments": [
+                {
+                  "val": "on a monthly basis",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefs.UserJourneyStepDef.takeHomePayDisplayed(java.lang.String)"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-10-22T13:51:42.434Z",
+        "start_timestamp": "2020-10-22T14:16:18.346Z",
         "line": 13,
         "name": "User decides to start again",
         "description": "",
@@ -113,31 +137,43 @@
         "steps": [
           {
             "result": {
-              "duration": 2547167300,
+              "duration": 2984630200,
               "status": "passed"
             },
             "line": 14,
-            "name": "the user is on the tax estimate page",
+            "name": "the user is on the \"tax estimate\" page",
             "match": {
-              "location": "stepdefs.TaxResultsStepDef.userOnResultsPage()"
+              "arguments": [
+                {
+                  "val": "tax estimate",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.UserJourneyStepDef.userOnThePage(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 368566900,
+              "duration": 456789400,
               "status": "passed"
             },
             "line": 15,
-            "name": "the user clicks to start again",
+            "name": "the user clicks \"start again\"",
             "match": {
-              "location": "stepdefs.TaxResultsStepDef.clickStartAgain()"
+              "arguments": [
+                {
+                  "val": "start again",
+                  "offset": 17
+                }
+              ],
+              "location": "stepdefs.TaxResultsStepDef.clickButton(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 16989500,
+              "duration": 19335300,
               "status": "passed"
             },
             "line": 16,
@@ -161,7 +197,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-10-22T13:51:45.371Z",
+        "start_timestamp": "2020-10-22T14:16:21.812Z",
         "line": 3,
         "name": "User submits hourly salary to tax calculator",
         "description": "",
@@ -171,19 +207,25 @@
         "steps": [
           {
             "result": {
-              "duration": 191093500,
+              "duration": 171037300,
               "status": "passed"
             },
             "line": 4,
-            "name": "the user is on the tax calculator page",
+            "name": "the user is on the \"tax calculator\" page",
             "match": {
-              "location": "stepdefs.UserJourneyStepDef.userOnThePage()"
+              "arguments": [
+                {
+                  "val": "tax calculator",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.UserJourneyStepDef.userOnThePage(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2338082500,
+              "duration": 2535286200,
               "status": "passed"
             },
             "line": 5,
@@ -201,16 +243,16 @@
           },
           {
             "result": {
-              "duration": 35962100,
+              "duration": 32360000,
               "status": "passed"
             },
             "line": 6,
-            "name": "the user gets shown their take-home pay from their \"hourly\" salary",
+            "name": "the user gets shown their take-home pay \"from their hourly salary\"",
             "match": {
               "arguments": [
                 {
-                  "val": "hourly",
-                  "offset": 52
+                  "val": "from their hourly salary",
+                  "offset": 41
                 }
               ],
               "location": "stepdefs.UserJourneyStepDef.takeHomePayDisplayed(java.lang.String)"
@@ -220,7 +262,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-10-22T13:51:47.941Z",
+        "start_timestamp": "2020-10-22T14:16:24.556Z",
         "line": 8,
         "name": "User submits daily salary to tax calculator",
         "description": "",
@@ -230,19 +272,25 @@
         "steps": [
           {
             "result": {
-              "duration": 198302100,
+              "duration": 151749100,
               "status": "passed"
             },
             "line": 9,
-            "name": "the user is on the tax calculator page",
+            "name": "the user is on the \"tax calculator\" page",
             "match": {
-              "location": "stepdefs.UserJourneyStepDef.userOnThePage()"
+              "arguments": [
+                {
+                  "val": "tax calculator",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.UserJourneyStepDef.userOnThePage(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2551454800,
+              "duration": 2497566400,
               "status": "passed"
             },
             "line": 10,
@@ -260,16 +308,16 @@
           },
           {
             "result": {
-              "duration": 33989600,
+              "duration": 38057000,
               "status": "passed"
             },
             "line": 11,
-            "name": "the user gets shown their take-home pay from their \"daily\" salary",
+            "name": "the user gets shown their take-home pay \"from their daily salary\"",
             "match": {
               "arguments": [
                 {
-                  "val": "daily",
-                  "offset": 52
+                  "val": "from their daily salary",
+                  "offset": 41
                 }
               ],
               "location": "stepdefs.UserJourneyStepDef.takeHomePayDisplayed(java.lang.String)"
@@ -279,7 +327,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-10-22T13:51:50.730Z",
+        "start_timestamp": "2020-10-22T14:16:27.246Z",
         "line": 13,
         "name": "User submits £0 as salary",
         "description": "",
@@ -289,19 +337,25 @@
         "steps": [
           {
             "result": {
-              "duration": 162065800,
+              "duration": 156647400,
               "status": "passed"
             },
             "line": 14,
-            "name": "the user is on the tax calculator page",
+            "name": "the user is on the \"tax calculator\" page",
             "match": {
-              "location": "stepdefs.UserJourneyStepDef.userOnThePage()"
+              "arguments": [
+                {
+                  "val": "tax calculator",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.UserJourneyStepDef.userOnThePage(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 341405400,
+              "duration": 371157900,
               "status": "passed"
             },
             "line": 15,
@@ -313,20 +367,26 @@
           },
           {
             "result": {
-              "duration": 37206300,
+              "duration": 28999800,
               "status": "passed"
             },
             "line": 16,
-            "name": "an error message appears",
+            "name": "\"no salary\" error message appears",
             "match": {
-              "location": "stepdefs.UserJourneyStepDef.noSalaryErrorMessage()"
+              "arguments": [
+                {
+                  "val": "no salary",
+                  "offset": 1
+                }
+              ],
+              "location": "stepdefs.UserJourneyStepDef.errorMessage(java.lang.String)"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-10-22T13:51:51.273Z",
+        "start_timestamp": "2020-10-22T14:16:27.808Z",
         "line": 18,
         "name": "User claims to work 8 days a week",
         "description": "",
@@ -336,19 +396,25 @@
         "steps": [
           {
             "result": {
-              "duration": 177453500,
+              "duration": 178060100,
               "status": "passed"
             },
             "line": 19,
-            "name": "the user is on the tax calculator page",
+            "name": "the user is on the \"tax calculator\" page",
             "match": {
-              "location": "stepdefs.UserJourneyStepDef.userOnThePage()"
+              "arguments": [
+                {
+                  "val": "tax calculator",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.UserJourneyStepDef.userOnThePage(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 902147900,
+              "duration": 849659300,
               "status": "passed"
             },
             "line": 20,
@@ -360,13 +426,19 @@
           },
           {
             "result": {
-              "duration": 42390700,
+              "duration": 33532900,
               "status": "passed"
             },
             "line": 21,
-            "name": "a different error message appears",
+            "name": "\"incorrect days\" error message appears",
             "match": {
-              "location": "stepdefs.UserJourneyStepDef.wrongDaysErrorMessage()"
+              "arguments": [
+                {
+                  "val": "incorrect days",
+                  "offset": 1
+                }
+              ],
+              "location": "stepdefs.UserJourneyStepDef.errorMessage(java.lang.String)"
             },
             "keyword": "Then "
           }

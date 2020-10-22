@@ -26,47 +26,39 @@ public class TaxResultsStepDef {
         detailspage.submitData();
     }
 
-    @Given("^the user is on the tax estimate page$")
-    public void userOnResultsPage() {
-        homepage.clearCookies();
-        homepage.goTo();
-        homepage.typeSalary();
-        homepage.selectHourly();
-        detailspage.typeHours();
-        detailspage.selectNoStatePension();
-        detailspage.ignoreTaxCode();
-        detailspage.selectNoScottishTaxRate();
-        detailspage.submitData();
-    }
+//    @Given("^the user is on the tax estimate page$")
+//    public void userOnResultsPage() {
+//        homepage.clearCookies();
+//        homepage.goTo();
+//        homepage.typeSalary();
+//        homepage.selectHourly();
+//        detailspage.typeHours();
+//        detailspage.selectNoStatePension();
+//        detailspage.ignoreTaxCode();
+//        detailspage.selectNoScottishTaxRate();
+//        detailspage.submitData();
+//    }
 
-    @When("^the user selects monthly pay tab$")
-    public void clickMonthlyTab() {
-        resultspage.clickMonthTab();
-    }
+//    @When("^the user selects monthly pay tab$")
+//    public void clickMonthlyTab() {
+//        resultspage.clickMonthTab();
+//    }
 
-    @Then("^the user gets shown their monthly take-home pay$")
-    public void verifyMonthResults() {
-        resultspage.verifyMonthlyEstimateVisible();
-    }
-
-    @When("^the user clicks to start again$")
-    public void clickStartAgain() {
-        resultspage.clickStartAgain();
+    @When("^the user clicks \"([^\"]*)\"$")
+    public void clickButton(String link) {
+        switch (link) {
+            case "start again":
+                resultspage.clickStartAgain();
+                break;
+            case "monthly pay tab":
+                resultspage.clickMonthTab();
+                break;
+        }
     }
 
     @Then("^the user should be on the home page$")
     public void userOnHomePage() {
         homepage.verifyOnHomePage();
-    }
-
-    @When("^the user clicks the feedback form link$")
-    public void clickFeedback() {
-        resultspage.clickFeedbackLink();
-    }
-
-    @Then("^the feedback form page loads$")
-    public void verifyFeedbackPage() {
-        resultspage.verifyFeedbackFormLoaded();
     }
 
 }

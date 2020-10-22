@@ -18,13 +18,18 @@ public class ResultsPage extends BasePage {
     public void verifyPayDisplayed(String salary) {
         WebElement description = driver.findElement(GREEN_BOX_TEXT);
         switch (salary) {
-            case "hourly":
+            case "from their hourly salary":
                 Assert.assertEquals("Your estimated take-home pay for 2020 is\n" +
                         "£14,249.80 a year", description.getText());
                 break;
-            case "daily":
+            case "from their daily salary":
                 Assert.assertEquals("Your estimated take-home pay for 2020 is\n" +
                         "£2,600 a year", description.getText());
+                break;
+            case "on a monthly basis":
+                WebElement monthlyText = driver.findElement(MONTHLY_GREEN_BOX_TEXT);
+                Assert.assertEquals("Your estimated take-home pay for 2020 is\n" +
+                        "£1,187.48 a month", monthlyText.getText());
                 break;
         }
     }
