@@ -1,0 +1,60 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-22T10:30:50.231Z",
+        "line": 3,
+        "name": "User completes full journey through tax calculator",
+        "description": "",
+        "id": "userjourney;user-completes-full-journey-through-tax-calculator",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6564248200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the tax calculator page",
+            "match": {
+              "location": "stepdefs.UserJourneyStepDef.userOnThePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2365913600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user fills in all their details",
+            "match": {
+              "location": "stepdefs.UserJourneyStepDef.userFillsInDetails()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41055000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user should get shown their take-home pay",
+            "match": {
+              "location": "stepdefs.UserJourneyStepDef.takeHomePayDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "UserJourney",
+    "description": "",
+    "id": "userjourney",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/userjourney.feature",
+    "tags": []
+  }
+]

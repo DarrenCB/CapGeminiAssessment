@@ -1,11 +1,10 @@
 package pageObjects;
 
 public class PersonalDetails {
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String invalidEmail;
-    private String password;
+    private String Name;
+    private String Salary;
+    private String Hours;
+    private String Days;
     private String address;
     private String city;
     private String state;
@@ -13,12 +12,11 @@ public class PersonalDetails {
     private String phoneNumber;
     private String aliasName;
 
-    public PersonalDetails(String firstName, String lastName, String email, String invalidEmail, String password, String address, String city, String state, String postcode, String phoneNumber, String aliasName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.invalidEmail = invalidEmail;
-        this.password = password;
+    public PersonalDetails(String name, String salary, String hours, String days, String address, String city, String state, String postcode, String phoneNumber, String aliasName) {
+        this.Name = name;
+        this.Salary = salary;
+        this.Hours = hours;
+        this.Days = days;
         this.address = address;
         this.city = city;
         this.state = state;
@@ -28,24 +26,20 @@ public class PersonalDetails {
     }
 
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return Name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getSalary() {
+        return Salary;
     }
 
-    public String getEmail() {
-        return email;
+    public String getHours() {
+        return Hours;
     }
 
-    public String getInvalidEmail() {
-        return invalidEmail;
-    }
-
-    public String getPassword() {
-        return password;
+    public String getDays() {
+        return Days;
     }
 
     public String getAddress() {

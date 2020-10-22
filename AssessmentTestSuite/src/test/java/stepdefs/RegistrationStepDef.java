@@ -1,9 +1,6 @@
 package stepdefs;
 
-
-
 import config.DriverFactory;
-
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -22,28 +19,28 @@ public class RegistrationStepDef {
     public void theUserOnThePage(String page) {
         homepage.clearCookies();
         homepage.goTo();
-        switch (page) {
-            case "sign in":
-                homepage.navigateToSignInPage();
-                break;
-            case "home":
-                homepage.maximiseBrowserWindow();
-                break;
-            case "product":
-                homepage.maximiseBrowserWindow();
-                break;
-            case "dresses":
-                homepage.clickDresses();
-                break;
-            case "summer dresses":
-                homepage.clickSummerDresses();
-                break;
-            case "account":
-                homepage.navigateToSignInPage();
-                break;
-            default:
-                throw new IllegalArgumentException("Unrecognised page provided");
-        }
+//        switch (page) {
+//            case "sign in":
+//                homepage.navigateToSignInPage();
+//                break;
+//            case "home":
+//                homepage.maximiseBrowserWindow();
+//                break;
+//            case "product":
+//                homepage.maximiseBrowserWindow();
+//                break;
+//            case "dresses":
+//                homepage.clickDresses();
+//                break;
+//            case "summer dresses":
+//                homepage.clickSummerDresses();
+//                break;
+//            case "account":
+//                homepage.navigateToSignInPage();
+//                break;
+//            default:
+//                throw new IllegalArgumentException("Unrecognised page provided");
+//        }
 
     }
 
