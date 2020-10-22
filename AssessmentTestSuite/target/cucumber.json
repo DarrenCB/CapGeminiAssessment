@@ -3,17 +3,17 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-10-22T10:30:50.231Z",
+        "start_timestamp": "2020-10-22T12:14:14.402Z",
         "line": 3,
-        "name": "User completes full journey through tax calculator",
+        "name": "User submits hourly salary to tax calculator",
         "description": "",
-        "id": "userjourney;user-completes-full-journey-through-tax-calculator",
+        "id": "userjourney;user-submits-hourly-salary-to-tax-calculator",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 6564248200,
+              "duration": 6580027900,
               "status": "passed"
             },
             "line": 4,
@@ -25,25 +25,261 @@
           },
           {
             "result": {
-              "duration": 2365913600,
+              "duration": 2341820700,
               "status": "passed"
             },
             "line": 5,
-            "name": "the user fills in all their details",
+            "name": "the user fills in their \"hourly\" salary and all details",
             "match": {
-              "location": "stepdefs.UserJourneyStepDef.userFillsInDetails()"
+              "arguments": [
+                {
+                  "val": "hourly",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefs.UserJourneyStepDef.userFillsInDetails(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 41055000,
+              "duration": 34996800,
               "status": "passed"
             },
             "line": 6,
-            "name": "the user should get shown their take-home pay",
+            "name": "the user gets shown their take-home pay from their \"hourly\" salary",
             "match": {
-              "location": "stepdefs.UserJourneyStepDef.takeHomePayDisplayed()"
+              "arguments": [
+                {
+                  "val": "hourly",
+                  "offset": 52
+                }
+              ],
+              "location": "stepdefs.UserJourneyStepDef.takeHomePayDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-22T12:14:23.403Z",
+        "line": 8,
+        "name": "User submits daily salary to tax calculator",
+        "description": "",
+        "id": "userjourney;user-submits-daily-salary-to-tax-calculator",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 179469200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user is on the tax calculator page",
+            "match": {
+              "location": "stepdefs.UserJourneyStepDef.userOnThePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2449509200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user fills in their \"daily\" salary and all details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "daily",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefs.UserJourneyStepDef.userFillsInDetails(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39094100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user gets shown their take-home pay from their \"daily\" salary",
+            "match": {
+              "arguments": [
+                {
+                  "val": "daily",
+                  "offset": 52
+                }
+              ],
+              "location": "stepdefs.UserJourneyStepDef.takeHomePayDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-22T12:14:26.077Z",
+        "line": 13,
+        "name": "User edits his submitted salary",
+        "description": "",
+        "id": "userjourney;user-edits-his-submitted-salary",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 321957500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user is on the tax calculator page",
+            "match": {
+              "location": "stepdefs.UserJourneyStepDef.userOnThePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3045631700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user fills in their \"hourly\" salary and all details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hourly",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefs.UserJourneyStepDef.userFillsInDetails(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2092613300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user edits their data to a daily salary",
+            "match": {
+              "location": "stepdefs.UserJourneyStepDef.changeHourlySalaryToDailySalary()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31989900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user gets shown their take-home pay from their \"daily\" salary",
+            "match": {
+              "arguments": [
+                {
+                  "val": "daily",
+                  "offset": 52
+                }
+              ],
+              "location": "stepdefs.UserJourneyStepDef.takeHomePayDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-22T12:14:31.573Z",
+        "line": 19,
+        "name": "User submits £0 as salary",
+        "description": "",
+        "id": "userjourney;user-submits-£0-as-salary",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 195046200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user is on the tax calculator page",
+            "match": {
+              "location": "stepdefs.UserJourneyStepDef.userOnThePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 415418300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user submits no salary",
+            "match": {
+              "location": "stepdefs.UserJourneyStepDef.userSubmitsNoSalary()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42143600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "an error message appears",
+            "match": {
+              "location": "stepdefs.UserJourneyStepDef.noSalaryErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-22T12:14:32.228Z",
+        "line": 24,
+        "name": "User claims to work 8 days a week",
+        "description": "",
+        "id": "userjourney;user-claims-to-work-8-days-a-week",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 244212900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the user is on the tax calculator page",
+            "match": {
+              "location": "stepdefs.UserJourneyStepDef.userOnThePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 915708600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the user fills in their daily salary and types 8 days a week",
+            "match": {
+              "location": "stepdefs.UserJourneyStepDef.userSubmitsEightDayWeek()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31719700,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "a different error message appears",
+            "match": {
+              "location": "stepdefs.UserJourneyStepDef.wrongDaysErrorMessage()"
             },
             "keyword": "Then "
           }

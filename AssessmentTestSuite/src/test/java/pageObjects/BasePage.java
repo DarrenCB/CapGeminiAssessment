@@ -35,6 +35,7 @@ abstract class BasePage {
 
     void findAndType(By elementSelector, String inputString) {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(elementSelector));
+        element.clear();
         element.sendKeys(inputString);
     }
 
