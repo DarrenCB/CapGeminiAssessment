@@ -83,9 +83,4 @@ public class UserJourneyStepDef {
         detailspage.typeEightDays();
     }
 
-//    @Then("^a different error message appears$")
-//    public void wrongDaysErrorMessage() {
-//        detailspage.tooManyDaysErrorMessageVisible();
-//    }
-
 }

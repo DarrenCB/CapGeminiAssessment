@@ -12,7 +12,7 @@ abstract class BasePage {
 
     protected WebDriver driver;
     protected WebDriverWait wait;
-    private PersonalDetails pd = new PersonalDetails("Bob", "10", "30", "5", "Sherwood Forest", "Nottingham", "Minnesota", "12345", "6320864892", "Forest");
+    private PersonalDetails pd = new PersonalDetails("Bob", "10", "30", "5");
 
     BasePage() {
         driver = DriverFactory.getDriver();

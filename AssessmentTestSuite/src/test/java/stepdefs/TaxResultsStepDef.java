@@ -26,24 +26,6 @@ public class TaxResultsStepDef {
         detailspage.submitData();
     }
 
-//    @Given("^the user is on the tax estimate page$")
-//    public void userOnResultsPage() {
-//        homepage.clearCookies();
-//        homepage.goTo();
-//        homepage.typeSalary();
-//        homepage.selectHourly();
-//        detailspage.typeHours();
-//        detailspage.selectNoStatePension();
-//        detailspage.ignoreTaxCode();
-//        detailspage.selectNoScottishTaxRate();
-//        detailspage.submitData();
-//    }
-
-//    @When("^the user selects monthly pay tab$")
-//    public void clickMonthlyTab() {
-//        resultspage.clickMonthTab();
-//    }
-
     @When("^the user clicks \"([^\"]*)\"$")
     public void clickButton(String link) {
         switch (link) {
