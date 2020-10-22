@@ -47,16 +47,6 @@ public class UserJourneyStepDef {
         resultspage.verifyPayDisplayed(salary);
     }
 
-    @And("^the user edits their data to a daily salary$")
-    public void changeHourlySalaryToDailySalary(){
-        resultspage.pressBack();
-        detailspage.editSalary();
-        homepage.typeSalary();
-        homepage.selectDaily();
-        detailspage.typeDays();
-        detailspage.submitData();
-    }
-
     @When("^the user submits no salary$")
     public void userSubmitsNoSalary(){
         homepage.typeEmptySalary();

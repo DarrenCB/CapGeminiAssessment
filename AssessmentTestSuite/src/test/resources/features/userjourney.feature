@@ -10,12 +10,6 @@ Feature: UserJourney
     When the user fills in their "daily" salary and all details
     Then the user gets shown their take-home pay from their "daily" salary
 
-  Scenario: User edits his submitted salary
-    Given the user is on the tax calculator page
-    When the user fills in their "hourly" salary and all details
-    And the user edits their data to a daily salary
-    Then the user gets shown their take-home pay from their "daily" salary
-
   Scenario: User submits £0 as salary
     Given the user is on the tax calculator page
     When the user submits no salary

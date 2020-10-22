@@ -50,6 +50,11 @@ public class HomePage extends BasePage {
         Assert.assertTrue(elementIsVisible(error));
     }
 
+    public void verifyOnHomePage() {
+        String url = driver.getCurrentUrl();
+        Assert.assertEquals("https://www.tax.service.gov.uk/estimate-paye-take-home-pay/your-pay", url);
+    }
+
 //
 //    public void navigateToSignInPage() {
 //        waitAndClick(SIGN_IN_BUTTON);
